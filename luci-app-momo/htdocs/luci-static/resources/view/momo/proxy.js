@@ -189,6 +189,8 @@ return view.extend({
         o = s.taboption('bypass', form.DynamicList, 'bypass_dscp', _('Bypass DSCP'));
         o.datatype = 'range(0, 63)';
 
+        o = s.taboption('bypass', form.DynamicList, 'bypass_fwmark', _('Bypass FWMark'));
+
         s.tab('misc', _('Misc'));
 
         o = s.taboption('misc', form.DynamicList, 'reserved_ip', _('Reserved IP'));
