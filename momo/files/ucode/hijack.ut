@@ -8,6 +8,8 @@
 	import { connect } from 'ubus';
 	import { get_paths, uci_bool, uci_array, get_cgroups_version, get_users, get_groups, get_cgroups } from '/etc/momo/ucode/include.uc';
 
+	const fw4 = require('fw4');
+
 	const paths = get_paths();
 
 	const cgroups_version = get_cgroups_version();
