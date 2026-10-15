@@ -9,7 +9,7 @@ init=$(uci -q get momo.config.init); [ -z "$init" ] && return
 random=$(awk 'BEGIN{srand(); printf "%06d", int(rand() * 1000000)}')
 
 # set momo.mixin.api_secret
-uci set momo.mixin.external_control_api_secret="$random"
+# uci set momo.mixin.external_control_api_secret="$random"
 
 # remove momo.config.init
 uci del momo.config.init
